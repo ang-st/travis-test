@@ -1,16 +1,16 @@
 sudo: required
 install:
-  - npm install electron-packager -g
-  - electron-packager app/ foo --platform=linux --arch=x64 --version=0.35.6
-  - ls -l  /home/travis/build/ang-st/travis-test/foo-linux-x64
-  - tar czf /home/travis/build/ang-st/travis-test/foo-linux-x64.tgz /home/travis/build/ang-st/travis-test/foo-linux-x64
+- npm install electron-packager -g
+- electron-packager app/ foo --platform=linux --arch=x64 --version=0.35.6
+- ls -l  /home/travis/build/ang-st/travis-test/foo-linux-x64
+- tar czf /home/travis/build/ang-st/travis-test/foo-linux-x64.tgz /home/travis/build/ang-st/travis-test/foo-linux-x64
 language: node_js
 node_js:
 - '5.7'
 deploy:
   provider: releases
-  api_key: "01c4c966fca8ef51e9281b7a19b35f9cb50e3fde"
-  file: "/home/travis/build/ang-st/travis-test/foo-linux-x64.tgz"
-  skip_cleanup: true
+  api_key:
+    secure: klgXv5XFEQfQF5nbmDDLMNiNrRMuAhbGU5MxRbFwRPblvLYDPH8DgQ9zXW/twufwU9GJr0TqpPm0Q9fuYVdeaZohE3sZ6r7frGmx55tbnsuD4qS/2V/mJHdyh0yvPqlXjln2931QSz13PrRbNlvs25J5ygyj3dwXDU+Irrdb9mZJLxSwur7E7fMF46DP+FFTlEf3IWo4upUR5bhK6qPybiDzJ6uNG8eeq0SJIT4GQfsdoOvx5zyCgWKOP6PCspZEGJh8EDm74jsIwZEKkOIJXdSBcOSkW0XedzrPabyJNSKSHWiFLmPXOi0T0amNhCu5C0+5g97OLwjtypYZyNdSqCOuDToEfTzTTh+wSUTws8aRE5jkdlKLAYPGNOFN6ns8xWf0FandfoWPC18n9X8YPML10wXN/Xt/l92its6enjTkaoe9ZV2IM7PBuF0TBWuEvaR5rbNwee4feK2RzkEtu64WIzL0TaKvMIHNkor1DmTGKWXsZCHaO+tUYnPWLik5e/3MAAUuPfQOjAlZg7GRMfMFmqxEnn9QbFdC7eHw0Tqrz/ohqB2aK4GUJkJ2V1+dnvpXsQCBZKFIwgVh2oguYPV/Q0k8JoN9zrjiPJVjnpQMQLhoX8/liizUZr01o7zifUWlbfr+aqZcZtBE5gDWODPjPWAxcDM3e3HNNeryaCo=
+  file: /home/travis/build/ang-st/travis-test/foo-linux-x64.tgz
   on:
-    tags: true
+    repo: ang-st/travis-test
