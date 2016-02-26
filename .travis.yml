@@ -9,8 +9,8 @@ node_js:
 - '5.7'
 deploy:
   provider: releases
-  api_key: "580ffee692a3232dbeece3125229730f46afc071"
-  file: "/home/travis/build/ang-st/travis-test/fooo.txt"
+  api_key: "01c4c966fca8ef51e9281b7a19b35f9cb50e3fde"
+  file: "/home/travis/build/ang-st/travis-test/foo-linux-x64.tgz"
   skip_cleanup: true
   on:
     tags: true
