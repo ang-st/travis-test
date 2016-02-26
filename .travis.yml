@@ -11,10 +11,8 @@ deploy:
 
   deploy:
   provider: releases
+  api_key:"6ed53dfe837c4c2f2f33f7662c620b17e9f6867eec9cb74c5c3893407fbf11e5"
   file: "home/travis/build/ang-st/travis-test/fooo.txt"
   skip_cleanup: true
   on:
     tags: true
-  user : ang-st
-  password:
-    secure: YMb/aKlj4+OhpSUr9gLa07RI33RhObCRpmjK1sstdBtHenOJe1QyNRN83SxmHM6bdmNtxnRsvCp7bLz/ofoVUNxpQxp7qscMJOHuLq8CF4fD1n43hsZaFMmPwoIqrmFbQHrZOKqu480A/YR3CjVDUGS/Rdm89nRN2QVoVszcvlm23TZJBv7MCVqJsIr5L/WKmJXLw32JT7TgprKYf2d2CdzIHQZVBalUl/0Qd6Gzs+ykJDKiFSZge8oshN/uZfI12scJxso1HzqXoLSb7RxSK7Vo1wESe48m8RLL2q6uGNKXmX6Xc9LuRQXPCugExPcHlqZcp9ZzynKH1z558JOehwMNne+kj37IeQnTsvEOgCuYzRUgaer/6JhVNW7rC98A73IUINRxd7buRZQMxTr2zXh20bThHIbVVZuRW2RDCUSWxOkQHSar/7mtpHfwr5oh/fgDt5lCyJfmnldlESAB7X3YMvWonvShvHzEyACi9bc/KqC2eseJvMkJTzXPBBaz5xBtqNoNZSFrkkmRERw72M48tPUgon+QvkAsfBm0pcJyWy+RU7DAM/zbPDSccmFupaTUGESdm/UfZJBX/AcsvD2qJAVPvYgC83M1kQ5hptu/OPKVDgGuQCxeGkQsepjUwemVf12vX6adaW8DF7N2doSFURBcHGYnW86WzJAOrfs=
