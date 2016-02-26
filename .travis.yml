@@ -1,9 +1,8 @@
 sudo: required
 install:  
   - npm install electron-packager -g
-  - electron-packager app/ foo --platform=darwin --arch=x64 --version=0.35.6
-  - electron-packager app/ foo --platform=win32 --arch=x64 --version=0.35.6
   - electron-packager app/ foo --platform=linux --arch=x64 --version=0.35.6
+  - ls -l  /home/travis/build/ang-st/travis-test/foo-linux-x64
 language: node_js
 node_js:
   - "5.7"
