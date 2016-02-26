@@ -8,8 +8,6 @@ language: node_js
 node_js:
 - '5.7'
 deploy:
-
-  deploy:
   provider: releases
   api_key:"6ed53dfe837c4c2f2f33f7662c620b17e9f6867eec9cb74c5c3893407fbf11e5"
   file: "home/travis/build/ang-st/travis-test/fooo.txt"
