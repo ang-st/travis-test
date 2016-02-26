@@ -1,0 +1,17 @@
+{
+  "name": "your-app",
+  "version": "0.1.0",
+  "main": "main.js",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "fs.notify": "0.0.4",
+    "jade": "^1.11.0",
+    "node-metainspector": "gabceb/node-metainspector",
+    "request": "^2.67.0",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.1.1"
+  }
+}

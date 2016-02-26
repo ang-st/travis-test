@@ -1,5 +1,6 @@
 install:  
   - npm install electron-packager -g
+  - electron-packager app/ foo --platform=darwin --arch=x64 --version=0.35.6
 language: node_js
 node_js:
   - "4.1"
